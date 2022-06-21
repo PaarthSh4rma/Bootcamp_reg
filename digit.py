@@ -1,5 +1,5 @@
 '''
-What it does?
+What the code does?
 The code converts the given list to a number with the elements of the list as its digits.
 '''
 
@@ -11,14 +11,13 @@ This process is repeated for all elements in the reversed list with power increm
 '''
 
 given_list = [8,3,5,1,2,1]
-given_list = given_list[::-1]
-power = 0
-number = 0
+given_list = given_list[::-1]  # reversing the list for esier working
+power = 0  # power factor
+number = 0  # Intialising the final number as 0 to start
 
 for digit in given_list:
-    number_add = digit * 10 ** power
-    power += 1
-    print(number_add)
-    number += number_add
+    number_add = digit * 10 ** power  # calculating place value of element
+    power += 1  # incrementing power factor
+    number += number_add  # adding element's place value to the final number
 
-print(number)
+print(number)  # printing final number
